@@ -1,0 +1,236 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #252525;
+    color: white;
+}
+
+.primary-bg-color {
+    background-color: #252525;
+}
+
+.secondary-bg-color {
+    background-color: #C09578;
+}
+
+.light-bg-color {
+    background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+    background-color: #101010;
+}
+
+.primary-color {
+    color: #C09578;
+}
+
+.secondary-color {
+    color: #626262;
+}
+
+.light-color {
+    color: #FCF5EB;
+}
+
+/* NAVBAR */
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: end;
+}
+
+#navbar .navbar-nav li {
+    margin-left: 1em;
+}
+
+#navbar a,
+#navbar button {
+    color: #fff;
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar i {
+    font-size: 20px;
+}
+
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ef3636;
+    text-align: center;
+}
+
+#bag-item span {
+    left: 20px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+#navbar-items {
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    #navbar-items {
+        min-width: 80%;
+        display: flex;
+    }
+}
+
+#search-form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+@media (min-width: 768px) {
+    #search-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+#search-form {
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+#search-form input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+#search-form input:focus {
+    box-shadow: none;
+}
+
+#search-form input::placeholder {
+    color: #fff;
+}
+
+/* BOTTOM NAVBAR */
+#bottom-navbar-container .container {
+    justify-content: flex-end; /*Mudar botão hamburguer para direita*/
+}
+
+#bottom-navbar-container a {
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-toggler {
+    font-size: 1.5em;
+}
+
+/* BANNERS */
+
+#banners-container {
+    padding: 0;
+}
+
+.carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8em;
+}
+
+@media (min-width: 768px) {
+    #slider .carousel-item,
+    #slider img {
+        height: 600px;
+    }
+
+    .carousel-caption {
+        left: 23%;
+        right: 23%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 4em;
+    }
+
+}
+
+/* MINI BANNERS */
+#mini-banners {
+    margin-top: -3em;
+    z-index: 10; /*Altera o posicionamento no eixo z, deixando ele para frente (a ideia é ficar na frente do slider)*/
+}
+
+#mini-banners .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column; /*PAra mudar o fluxo do display flex*/
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+#mini-banners  .col-12 {
+    max-width: 30%;
+}
+
+}
+
+#mini-banners .col-12 h2 {
+    text-transform: uppercase;
+    max-width: 50px;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#mini-banners .col-12 img {
+    height: 220px;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+#mini-banners .col-12 a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8em;
+    transition: 0.5s;
+}
+
+#mini-banners .col-12 a:hover {
+    color: #101010;
+}
+
+#mini-banners #mini-banner-1 a:hover,
+#mini-banners #mini-banner-3 a:hover {
+    color: #C09578;
+}
+
+#mini-banners #mini-banner-3 a {
+    color: #101010;
+}
+
